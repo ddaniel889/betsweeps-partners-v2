@@ -557,6 +557,30 @@ footer{border-top:1px solid var(--line);margin-top:90px;padding:64px 0 44px;back
 </div>
 
 <script>
+  (function(d,s){
+    window.Affelios = {
+      Tracker: {
+        operatorId: '6a2dea641744a387f3c673ee',
+        brandId: '6a2dea641744a387f3c673f1',
+        customDomains: {
+          clickUrl: 'https://track.affapp.io'
+        },
+        clickKeyQueryParameter: 'clickkey',
+        keywordQueryParameter: 'keyword',
+        trackerIdQueryParameter: 'cid',
+        productIdQueryParameter: 'pid',
+        mediaIdQueryParameter: 'mid',
+      }
+    };
+    var e = d.createElement(s),
+      m = d.getElementsByTagName(s)[0];
+    e.async = 1;
+    e.src = "https://js.affelios.com/platform-connect/platform-connect.0.0.0-alpha.9.js";
+    m.parentNode.insertBefore(e,m);
+  })(document,'script');
+</script>
+
+<script>
 /* ====== AFFELIOS — URLs del portal de afiliados ====== */
 const AFFELIOS_BASE = "https://betsweeps.affelios.com";
 const AFFELIOS_REGISTER_URL = AFFELIOS_BASE + "/app/affiliates/create";
